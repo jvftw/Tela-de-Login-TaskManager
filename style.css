@@ -1,11 +1,15 @@
 *{
   font-family: "montserrat",sans-serif;
-}
-body{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #333;
 }
+
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg,#4999cf,#1a243f);
+}
+
 .login-box{
   position: absolute;
   top: 0;
@@ -15,18 +19,24 @@ body{
   background-image: linear-gradient(45deg,#9fbaa8,#31354c);
   transition: 1s;
 }
-.login-form{
+
+.caixa{
+  width: 360px;
+  background: #f1f1f1;
+  height: 580px;
+  padding: 80px 40px;
+  border-radius: 10px;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%,-50%);
-  color: white;
+}
+
+.caixa h1{
   text-align: center;
+  margin-bottom: 60px;
 }
-.login-form h1{
-  font-weight: 400;
-  margin-top: 0;
-}
+
 .txtb{
   display: block;
   box-sizing: border-box;
