@@ -1,54 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Bem-Vindo!</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'><link rel="stylesheet" href="./style.css">
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login - Task Manager Brabo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  </head>
+  <body>
+    <form class="caixa" action="index.html" method="post">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="login-wrap">
-	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrar-se</label>
-		<div class="login-form">
-			<div class="sign-in-htm">
-				<div class="group">
-					<label for="user" class="label">Nome de Usuário</label>
-					<input id="user" type="text" class="input">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Senha</label>
-					<input id="pass" type="password" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Logar">
-				</div>
-				<div class="hr"></div>
-			</div>
-			<div class="registrar">
-				<div class="group">
-					<label for="user" class="label">Nome de Usuário</label>
-					<input id="user" type="text" class="input">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Senha</label>
-					<input id="pass" type="password" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<label for="pass" class="label">Repita a Senha</label>
-					<input id="pass" type="password" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<input type="submit" class="button" value="Registrar">
-				</div>
-				<div class="hr"></div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- partial -->
-  
-</body>
+      <h1>bem-vindo!</h1>
+      <input class="txtb" type="text" name="" placeholder="nome de usuário">
+      <input class="txtb" type="password" name="" placeholder="senha">
+      <input class="login-btn" type="submit" name="" value="logar">
+    
+    </form>
+
+
+
+    <script type="text/javascript">
+    $(".show-login-btn").on("click",function(){
+      $(".login-box").toggleClass("showed");
+    });
+    $(".hide-login-btn").on("click",function(){
+      $(".login-box").toggleClass("showed");
+    });
+    </script>
+
+  </body>
 </html>
